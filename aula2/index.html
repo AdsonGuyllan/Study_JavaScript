@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(174, 230, 240);
+            color: #b82525ef;
+            font: normal 18px Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo a usar o DOM</h1>
+    <p id="first">Tem que ser <strong>fera</strong> para manjar</p>
+    <p>Eu çou u milior</p>
+    <div id="cr7">SIIIIIIIIIIUUUUUUUU</div>
+
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]
+        document.write('No elemente selecionado está escrito: '+ p1.innerText)
+        p1.style.color = 'black'
+        var d = document.getElementById('cr7')
+        d.style.backgroundColor = 'yellow'
+        d.innerText = 'Poço naum ser, mas na minia cabessa eu çou u milior'
+        var d1 = document.querySelector('p#first')
+        d1.style.backgroundColor = 'white'
+    </script>
+</body>
+</html>
